@@ -1,3 +1,39 @@
+# prisma-remark-chakra-next
+
+# 🚀 Javascript full-stack 🚀
+
+https://github.com/coding-to-music/prisma-remark-chakra-next
+
+https://prisma-remark-chakra-next.vercel.app
+
+by Muhammad Ahmad https://github.com/MA-Ahmad
+
+https://my-projects-dashboard.vercel.app
+
+https://github.com/MA-Ahmad/myPortfolio
+
+## Environment Values
+
+```java
+export const GA_TRACKING_ID = process.env.GA_TRACKING_ID
+  const headers = { "api-key": process.env.DEVTO_APIKEY };
+    `${DEVTO_API_URL}/articles?username=${process.env.DEVTO_USERNAME}`
+        .update(ipAddress + process.env.IP_ADDRESS_HASH, 'utf8')
+```
+
+## GitHub
+
+```java
+git init
+git add .
+git remote remove origin
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:coding-to-music/prisma-remark-chakra-next.git
+git push -u origin main
+vercel --prod --confirm
+```
+
 <div align="center">
   <h1><a href="https://mahmad.me" target="_blank">Mahmad.me</a></h1>
   My personal portfolio website to show my skills, experience, and articles I published
