@@ -1,6 +1,6 @@
 export const companies = [
   {
-    title: 'Phaedra Solutions',
+    title: 'Company1',
     alt: 'PS image',
     role: 'Senior Software Engineer',
     skills: ['ruby', 'rails', 'typescript', 'javascript', 'react', 'aws'],
@@ -8,7 +8,7 @@ export const companies = [
     logo: '/assets/images/logos/phaedra.jpeg'
   },
   {
-    title: 'Brainx Technologies',
+    title: 'Company2',
     alt: 'BT image',
     role: 'Software Engineer',
     skills: ['ruby', 'rails', 'javascript', 'python'],
@@ -24,7 +24,7 @@ export const companies = [
   //   logo: '/assets/images/logos/codenya.png'
   // },
   {
-    title: 'Brainplow',
+    title: 'Company3',
     alt: 'Brainplow image',
     role: 'Software Engineer',
     skills: ['javascript', 'python', 'angular'],
@@ -36,7 +36,7 @@ export const companies = [
 export const institutes = [
   {
     short_title: 'FAST - NUCES',
-    title: 'National University of Computer and Emerging Sciences',
+    title: 'University Name Here',
     alt: 'Nuces image',
     role: "Bachelor's Degree in Computer Science",
     skills: ['project management', 'web development', 'data structures'],
