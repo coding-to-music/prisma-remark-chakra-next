@@ -2,9 +2,9 @@ import { FaGithub, FaDev, FaLinkedin, FaQuora, FaTwitter } from 'react-icons/fa'
 import { FiMail } from 'react-icons/fi';
 
 const siteConfig = {
-  copyright: `Copyright © ${new Date().getFullYear()} Muhammad Ahmad. All Rights Reserved.`,
+  copyright: `Copyright © ${new Date().getFullYear()} Your-Name-Here. All Rights Reserved.`,
   author: {
-    name: 'Muhammad Ahmad',
+    name: 'Your-Name-Here',
     accounts: [
       {
         url: 'https://github.com/coding-to-music',
@@ -19,13 +19,13 @@ const siteConfig = {
         icon: <FaTwitter />
       },
       {
-        url: 'https://dev.to/m_ahmad',
+        url: 'https://dev.to/codingtomusic',
         label: 'Dev Account',
         type: 'gray',
         icon: <FaDev />
       },
       {
-        url: 'https://linkedin.com/in/muhammad-ahmad20',
+        url: 'https://linkedin.com/in/thomasconnors44',
         label: 'LinkedIn Account',
         type: 'linkedin',
         icon: <FaLinkedin />
@@ -37,7 +37,7 @@ const siteConfig = {
         icon: <FaQuora />
       },
       {
-        url: 'mailto:muhammad.ahmad8043@gmail.com',
+        url: 'mailto:example1@example.com',
         label: 'Mail ahmad',
         type: 'gray',
         icon: <FiMail />

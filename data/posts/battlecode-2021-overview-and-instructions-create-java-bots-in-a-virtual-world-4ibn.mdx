@@ -153,8 +153,8 @@ In your Chromebook settings, enable the Linux (Beta)
 
 ### Chromebook is Debian
 
-```java
-@penguin:~$ cat /etc/os-release
+```ts
+unix-prompt:~$ cat /etc/os-release
 PRETTY_NAME="Debian GNU/Linux 10 (buster)"
 NAME="Debian GNU/Linux"
 VERSION_ID="10"
@@ -170,7 +170,7 @@ BUG_REPORT_URL="https://bugs.debian.org/"
 
 ```java
 // this chart would be different on Ubuntu. Here is a Debain example
-@penguin:~$ cat /etc/os-release
+unix-prompt:~$ cat /etc/os-release
 PRETTY_NAME="Debian GNU/Linux 10 (buster)"
 NAME="Debian GNU/Linux"
 VERSION_ID="10"
@@ -236,7 +236,7 @@ https://github.com/nodesource/distributions/blob/master/README.md#debinstall
 # If you're on an older Linux distribution, you will need to run this instead:
 # sudo dpkg -i <file>.deb
 # sudo apt-get install -f # Install dependencies
-@penguin:~$ code --version
+unix-prompt:~$ code --version
 1.51.1
 e5a624b788d92b8d34d1392e4c4d9789406efe8f
 x64
@@ -408,10 +408,10 @@ That leads to this page [here, you are looking for Java SE 8](https://www.oracle
 ```java
 // Previously I had Java - let's see if it works
 // Oops, I ran into a problem and got this error
-@penguin:$ java -version
+unix-prompt:$ java -version
 bash: /usr/local/jdk1.8.0_271/bin/java: No such file or directory
 // yet I appeared to have java installed
-@penguin:$ find /usr -name java
+unix-prompt:$ find /usr -name java
 /usr/bin/java
 /usr/lib/jvm/jdk1.8.0_271/bin/java
 /usr/lib/jvm/jdk1.8.0_271/jre/bin/java
@@ -499,10 +499,10 @@ sc
 ### To verify the installation, get the Java version
 
 ```java
-@penguin:~$ env | grep JAVA
+unix-prompt:~$ env | grep JAVA
 JAVA_HOME=/usr/lib/jvm/jdk1.8.0_271
 // test to find the java version
-@penguin:~$ java -version
+unix-prompt:~$ java -version
 java version "1.8.0_271"
 Java(TM) SE Runtime Environment (build 1.8.0_271-b09)
 Java HotSpot(TM) 64-Bit Server VM (build 25.271-b09, mixed mode)
@@ -515,7 +515,7 @@ If the version is old or you get the error `java: Command not found`, then the p
 Determine which java executable is the first one found in your PATH
 
 ```java
-@penguin:~$ which java
+unix-prompt:~$ which java
 /usr/lib/jvm/jdk1.8.0_271/bin/java
 ```
 
@@ -554,7 +554,7 @@ Next, you should download the Battlecode 2021 scaffold. To get up and running qu
 We recommend, however, that you instead use Git to organize your code. If you haven't used Git before, read this [guide](https://guides.github.com/introduction/git-handbook/) (or wait for our lecture covering it). On the [scaffold page](https://github.com/battlecode/battlecode20-scaffold), click `"Use this template."` Importantly, on the next page, make your new repo private (you don't want other teams to steal your code!). You can then clone your newly created repo and invite your team members to collaborate on it.
 
 ```java
-@penguin:~/aprojects$ git clone https://github.com/battlecode/battlecode21-scaffold.git
+unix-prompt:~/aprojects$ git clone https://github.com/battlecode/battlecode21-scaffold.git
 Cloning into 'battlecode21-scaffold'...
 remote: Enumerating objects: 50, done.
 remote: Counting objects: 100% (50/50), done.
@@ -570,7 +570,7 @@ We will name the repo: my-battlecode-2021-scaffold
 
 ```java
 // first we must delete the .git directory that came from the original GitHub battlecode scaffold
-@penguin:~/aprojects/my-battlecode-2021-scaffold$ rm -rf .git
+unix-prompt:~/aprojects/my-battlecode-2021-scaffold$ rm -rf .git
 
 // follow the instructions provided on GitHub
 git init
@@ -718,7 +718,7 @@ Open a terminal in the scaffold you just downloaded. Run the commands `./gradlew
 
 ```java
 // Now run "./gradle update"
-@penguin:~/aprojects/battlecode21-scaffold$ ./gradlew update
+unix-prompt:~/aprojects/battlecode21-scaffold$ ./gradlew update
 
 Welcome to Gradle 6.0.1!
 
@@ -752,7 +752,7 @@ BUILD SUCCESSFUL in 23s
 ### Build the gradle
 
 ```java
-@penguin:~/aprojects/battlecode21-scaffold$ ./gradlew build
+unix-prompt:~/aprojects/battlecode21-scaffold$ ./gradlew build
 
 > Task :compileScala
 Scala Compiler interface compilation took 38.592 secs
@@ -788,7 +788,7 @@ You can also run a match without the client, by invoking the Gradle task `run`. 
 ```java
 
 // run the game as defined in the gradle.properties - but to the console, it is huge
-@penguin:~/aprojects/battlecode21-scaffold$ ./gradlew run
+unix-prompt:~/aprojects/battlecode21-scaffold$ ./gradlew run
 
 // this went on forever I needed to kill it with ctrl-C ^C
 [A:SLANDERER#11514@68] I am trying to move NORTH; false 9.072361313166404 false
@@ -806,10 +806,10 @@ You can also run a match without the client, by invoking the Gradle task `run`. 
 
 // run the game as defined in the gradle.properties - but output it to a junk.txt file - add that to the .gitignore
 // Or send the output to >> /dev/null
-@penguin:~/aprojects/battlecode21-scaffold$ ./gradlew run >> /dev/null
+unix-prompt:~/aprojects/battlecode21-scaffold$ ./gradlew run >> /dev/null
 
 // find out how many lines of output are in the console output
-@penguin:~/aprojects/battlecode21-scaffold$ wc -l junk.txt
+unix-prompt:~/aprojects/battlecode21-scaffold$ wc -l junk.txt
 309508 junk.txt
 
 // there are 310,000 lines in the output of doing a run
