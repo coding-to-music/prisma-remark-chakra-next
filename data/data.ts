@@ -195,17 +195,17 @@ export const skillsArray = [
 
 export const newContent = [
   {
-    link: '/blog/free-10-chakra-ui-components-templateskart',
+    link: '/blog/battlecode-2021-overview-and-instructions-create-java-bots-in-a-virtual-world-4ibn',
     text: 'Free 10 Chakra UI components - TemplatesKart',
     showNewTag: true
   },
   {
-    link: '/blog/templateskart-free-chakra-ui-components-and-projects',
+    link: '/blog/battlecode-2021-overview-and-instructions-create-java-bots-in-a-virtual-world-4ibn',
     text: 'TemplatesKart | Free Chakra UI Components and Projects',
     showNewTag: true
   },
   {
-    link: '/blog/started-2022-by-updating-portfolio-website-1jde-temp-slug-4553258',
+    link: '/blog/battlecode-2021-overview-and-instructions-create-java-bots-in-a-virtual-world-4ibn',
     text: 'Started 2022 by updating portfolio website'
   }
 ];
