@@ -15,7 +15,6 @@
     "start": "next start",
     "lint": "next lint",
     "deploy": "git add . && git commit -m Build && git push && vercel --prod"
-
   },
   "dependencies": {
     "@chakra-ui/react": "^1.6.3",
@@ -30,7 +29,7 @@
     "gray-matter": "^4.0.3",
     "mitt": "^3.0.0",
     "moment": "^2.29.1",
-    "next": "11.0.0",
+    "next": "^11.1.4",
     "prismjs": "^1.24.0",
     "react": "17.0.2",
     "react-blurhash": "^0.1.3",
