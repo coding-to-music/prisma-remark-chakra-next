@@ -196,16 +196,16 @@ export const skillsArray = [
 export const newContent = [
   {
     link: '/blog/battlecode-2021-overview-and-instructions-create-java-bots-in-a-virtual-world-4ibn',
-    text: 'Free 10 Chakra UI components - TemplatesKart',
+    text: 'Battlecode Example 1',
     showNewTag: true
   },
   {
     link: '/blog/battlecode-2021-overview-and-instructions-create-java-bots-in-a-virtual-world-4ibn',
-    text: 'TemplatesKart | Free Chakra UI Components and Projects',
+    text: 'Battlecode Example 2',
     showNewTag: true
   },
   {
     link: '/blog/battlecode-2021-overview-and-instructions-create-java-bots-in-a-virtual-world-4ibn',
-    text: 'Started 2022 by updating portfolio website'
+    text: 'Battlecode Example 3'
   }
 ];
