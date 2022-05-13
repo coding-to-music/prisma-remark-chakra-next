@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": "14"
+    "node": "16"
   },
   "cacheDirectories": [
     "node_modules",
@@ -21,6 +21,7 @@
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
     "@prisma/client": "^3.8.1",
+    "@sentry/nextjs": "^6.19.7",
     "@types/prismjs": "^1.16.5",
     "axios": "^0.21.1",
     "blurhash": "^1.1.3",

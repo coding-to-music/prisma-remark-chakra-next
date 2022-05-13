@@ -6,15 +6,7 @@
 const { withSentryConfig } = require('@sentry/nextjs');
 
 const moduleExports = {
-  webpack: (config, { isServer }) => {
-    if (!isServer) {
-      config.resolve.fallback.fs = false;
-      config.resolve.fallback.net = false;
-      config.resolve.fallback.tls = false;
-      config.resolve.fallback.child_process = false;
-    }
-    return config;
-  }
+  // Your existing module.exports
 };
 
 const sentryWebpackPluginOptions = {
@@ -24,7 +16,7 @@ const sentryWebpackPluginOptions = {
   //   release, url, org, project, authToken, configFile, stripPrefix,
   //   urlPrefix, include, ignore
 
-  silent: true // Suppresses all logs
+  silent: true, // Suppresses all logs
   // For all available options, see:
   // https://github.com/getsentry/sentry-webpack-plugin#options.
 };
