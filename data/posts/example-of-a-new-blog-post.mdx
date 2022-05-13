@@ -1,0 +1,108 @@
+---
+published_at: '2022-05-13'
+title: 'Example of how to create a new blog post on this website'
+category: 'web-dev'
+tags: ['how-to', 'operations']
+description: 'Find out how to add a new blog post to this website.'
+cover_image: 'https://github.com/coding-to-music/prisma-remark-chakra-next/blob/main/public/assets/images/create-new-post/digitalocean_intro-to-cloud.jpg?raw=true'
+---
+
+# Let's find out to add a new blog post to this website.
+
+## Sync local and remote
+
+```java
+git pull origin main
+```
+
+## Digitalocean instructions
+
+Using info from this page: [How To Create a Pull Request on GitHub](https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github)
+
+Now, we’ll create our new branch with the git branch command. Make sure you name it descriptively so that others working on the project understand what you are working on.
+
+```java
+git branch new-branch
+```
+
+Now that our new branch is created, we can switch to make sure that we are working on that branch by using the git checkout command:
+
+```java
+git checkout new-branch
+```
+
+Once you enter the git checkout command, you will receive the following output:
+
+Output
+
+```java
+Switched to branch 'new-branch'
+```
+
+Alternatively, you can condense the above two commands, creating and switching to a new branch, with the following command and -b flag:
+
+```java
+git checkout -b new-branch
+```
+
+If you want to switch back to main, you’ll use the checkout command with the name of the main branch:
+
+```java
+git checkout main
+```
+
+The checkout command will allow you to switch between multiple branches, so you can potentially work on multiple features at once.
+
+## Create a branch
+
+```java
+git branch new-blog-post-branch
+```
+
+## Use the branch
+
+```java
+git checkout new-blog-post-branch
+```
+
+## or combine the two commands
+
+```java
+git checkout -b new-blog-post-branch
+```
+
+## create a blog post in `data/posts`
+
+created (this) file `example-of-a-new-post.mdx`
+
+## add an entry to the `data/data.ts`
+
+File `data/data.ts`
+
+```java
+export const newContent = [
+  {
+    link: '/blog/example-of-a-new-blog-post',
+    text: 'Example of how to create a new blog post on this website',
+    showNewTag: true
+  },
+```
+
+## add the content to git
+
+```java
+git add .
+git commit -m "example-of-a-new-blog-post"
+git status
+```
+
+## The new blog post will appear in three places
+
+1. New Content on the front page middle-of-the-page card "New year, new content"
+
+2. The blog post will be listed in the Blog page
+
+3. Pull Requests in the Links-->Changelog
+
+**Show your support** <br />
+Please give a ⭐️ on Github if you like my work! 🙏
