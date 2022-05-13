@@ -8,9 +8,11 @@ https://prisma-remark-chakra-next.vercel.app
 
 by Muhammad Ahmad https://github.com/MA-Ahmad
 
-https://my-projects-dashboard.vercel.app
+https://mahmad.me/
 
 https://github.com/MA-Ahmad/myPortfolio
+
+https://my-projects-dashboard.vercel.app (another project of his)
 
 ## Environment Values
 
@@ -104,6 +106,7 @@ export default siteConfig;
 </div>
 
 ## Built with
+
 - **Framework**: [Next.js](https://nextjs.org/)
 - **Styling**: [Chakra UI](https://chakra-ui.com/)
 - **Animations**: [Framer Motion](https://www.framer.com/motion/)
@@ -120,7 +123,7 @@ export default siteConfig;
 - `components/*` - Contains all components related to pages (blog, projects, about, etc).
   - `shared/*` - All reusable components like header, footer etc.
   - `layouts/*` - The different page layouts.
-  -  `theme/*` - Manage theme of site. 
+  - `theme/*` - Manage theme of site.
 - `data/*` - Data that used for blog posts, projects etc.
 - `lib/*` - Collection of helpful utilities or code for external services like devto api.
 - `pages/api/*` - [API routes](https://nextjs.org/docs/api-routes/introduction).
@@ -130,6 +133,7 @@ export default siteConfig;
 - `public/*` - Static assets including audios, fonts and images.
 
 ## View and copy code of your favourite components
+
 [TemplatesKart website](https://templateskart.com/projects/my-website)
 
 ## Running Locally
@@ -142,9 +146,8 @@ yarn dev
 
 The above commands will start the application on [http://localhost:3000/](http://localhost:3000)
 
-
 <!-- ## Screens
-### Home 
+### Home
 ![Home Screen](/public/assets/images/screens/home_page.png)
 ### Blog
 ![Skills Screen](/public/assets/images/screens/blog_page.png) -->
