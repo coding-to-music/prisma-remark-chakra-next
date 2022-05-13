@@ -195,8 +195,8 @@ export const skillsArray = [
 
 export const newContent = [
   {
-    link: '/blog/battlecode-2021-overview-and-instructions-create-java-bots-in-a-virtual-world-4ibn',
-    text: 'Battlecode Example 1',
+    link: '/blog/example-of-a-new-blog-post',
+    text: 'Example of how to create a new blog post on this website',
     showNewTag: true
   },
   {

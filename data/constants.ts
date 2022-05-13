@@ -11,4 +11,4 @@ export const DEVTO_API_URL = 'https://dev.to/api';
  */
 // export const SEO_IMAGE = 'https://mahmad.me/logo.png';
 
-export const SEO_IMAGE = 'https://avatars.githubusercontent.com/u/3156358?v=4';
+export const SEO_IMAGE = 'https://mahmad.me/logo.png';
