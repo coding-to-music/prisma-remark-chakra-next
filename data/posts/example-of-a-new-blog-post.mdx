@@ -96,6 +96,48 @@ git commit -m "example-of-a-new-blog-post"
 git status
 ```
 
+## Push Changes
+
+Once you have saved and exited the commit message text file, you can verify what Git will be committing with the following command:
+
+```java
+git status
+```
+
+Depending on the changes that you have made, you will receive output that resembles this:
+
+Output
+
+```java
+On branch new-branch
+nothing to commit, working tree clean
+```
+
+At this point you can use the git push command to push the changes to the current branch of your forked repository:
+
+```java
+git push --set-upstream origin new-blog-post-branch
+```
+
+The command will provide you with output to let you know of the progress, and it will be similar to the following:
+
+Output
+
+```java
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 336 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/your-username/repository.git
+   a1f29a6..79c0e80  new-branch  -> new-branch
+Branch new-branch set up to track remote branch new-branch from origin.
+```
+
+You can now navigate to the forked repository on your GitHub webpage and toggle to the branch you pushed to see the changes you have made in-browser.
+
+At this point, it is possible to make a pull request to the original repository, but if you have not already done so, you’ll want to make sure that your local repository is up-to-date with the upstream repository.
+
 ## The new blog post will appear in three places
 
 1. New Content on the front page middle-of-the-page card "New year, new content"
