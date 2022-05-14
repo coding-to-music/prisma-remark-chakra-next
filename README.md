@@ -21,6 +21,7 @@ export const GA_TRACKING_ID = process.env.GA_TRACKING_ID
   const headers = { "api-key": process.env.DEVTO_APIKEY };
     `${DEVTO_API_URL}/articles?username=${process.env.DEVTO_USERNAME}`
         .update(ipAddress + process.env.IP_ADDRESS_HASH, 'utf8')
+
 ```
 
 ## GitHub
