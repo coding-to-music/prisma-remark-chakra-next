@@ -14,6 +14,17 @@ https://github.com/MA-Ahmad/myPortfolio
 
 https://my-projects-dashboard.vercel.app (another project of his)
 
+## ToDo items
+
+- Blog works in dev but not prod
+- postgresql not seeded or set up yet
+- likes not set up with postgres
+- Sentry on all routes
+- Logrocket, FP setup
+- Check SEO
+- retrieve local weather, time, news, map
+- CI and GitGuardian, repository deployment, tests
+
 ## Environment Values
 
 ```java
