@@ -1,5 +1,15 @@
-import Document, { Html, Head, Main, NextScript } from "next/document";
-import { GA_TRACKING_ID } from "lib/gtag";
+import Document, { Html, Head, Main, NextScript } from 'next/document';
+import { GA_TRACKING_ID } from 'lib/gtag';
+
+import FingerprintJS from '@fingerprintjs/fingerprintjs-pro';
+
+// Initialize an agent at application startup.
+const fpPromise = FingerprintJS.load({
+  apiKey: process.env.FP_API_KEY
+});
+
+// Get the visitor identifier when you need it.
+fpPromise.then((fp) => fp.get()).then((result) => console.log(result.visitorId));
 
 class MyDocument extends Document {
   render() {
@@ -12,10 +22,7 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
           {/* Global Site Tag (gtag.js) - Google Analytics */}
-          <script
-            async
-            src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
-          />
+          <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`} />
           <script
             dangerouslySetInnerHTML={{
               __html: `
