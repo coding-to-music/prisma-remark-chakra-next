@@ -51,6 +51,7 @@
     "unified": "^9.2.1",
     "use-http": "^1.0.21",
     "use-sound": "^4.0.0",
+    "vercel": "^24.2.3",
     "zod": "^3.11.6"
   },
   "devDependencies": {
