@@ -13,6 +13,22 @@ import LogRocket from 'logrocket';
 
 LogRocket.init('zas8ib/example');
 
+import LogRocket from 'logrocket';
+import { applyMiddleware, createStore } from 'redux';
+
+const store = createStore(
+  reducer, // your app reducer
+
+  // our middleware should go last
+  applyMiddleware(middlewares, LogRocket.reduxMiddleware())
+);
+
+LogRocket.getSessionURL((sessionURL) => {
+  Sentry.configureScope((scope) => {
+    scope.setExtra('sessionURL', sessionURL);
+  });
+});
+
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
   useEffect(() => {
