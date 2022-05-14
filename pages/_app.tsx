@@ -13,7 +13,6 @@ import LogRocket from 'logrocket';
 
 LogRocket.init('zas8ib/example');
 
-import LogRocket from 'logrocket';
 import { applyMiddleware, createStore } from 'redux';
 
 const store = createStore(
