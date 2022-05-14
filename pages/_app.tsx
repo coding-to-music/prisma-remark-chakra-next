@@ -10,23 +10,12 @@ import { theme } from 'components/theme';
 import { AccentGlobal } from 'components/theme/Accent';
 import { FontsGlobal } from 'components/theme/fonts';
 import LogRocket from 'logrocket';
+import setupLogRocketReact from 'logrocket-react';
 
 LogRocket.init('zas8ib/example');
 
-import { applyMiddleware, createStore } from 'redux';
-
-const store = createStore(
-  reducer, // your app reducer
-
-  // our middleware should go last
-  applyMiddleware(middlewares, LogRocket.reduxMiddleware())
-);
-
-LogRocket.getSessionURL((sessionURL) => {
-  Sentry.configureScope((scope) => {
-    scope.setExtra('sessionURL', sessionURL);
-  });
-});
+// after calling LogRocket.init()
+// setupLogRocketReact(LogRocket);
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
