@@ -48,6 +48,55 @@ git push -u origin main
 vercel --prod --confirm
 ```
 
+### The Prisma schema.
+
+Note: You're occasionally using @mapand @@mapto map some field and model names to different column and table names in the underlying database. This is because NextAuth.js has some specialrequirements for calling things in your database a certain way.
+
+This Prisma schema defines two models, each of which will map to a table in the underlying database: User and Post. Notice that there's also a relation (one-to-many) between the two models, via the author field on Post and the posts field on User.
+
+To actually create the tables in your database, you now can use the following command of the Prisma CLI:
+
+```java
+npx prisma db push
+```
+
+Output
+
+```
+Environment variables loaded from .env
+Prisma schema loaded from prisma/schema.prisma
+Datasource "db": PostgreSQL database "name-here", schema "public" at "lallah.db.elephantsql.com:5432"
+
+⚠️  There might be data loss when applying the changes:
+
+  • A unique constraint covering the columns `[slug]` on the table `Post` will be added. If there are existing duplicate values, this will fail.
+
+
+✔ Do you want to ignore the warning(s)? … yes
+
+🚀  Your database is now in sync with your schema. Done in 2.66s
+
+✔ Generated Prisma Client (3.8.1 | library) to ./node_modules/@prisma/client in 138ms
+```
+
+You should see the following output:
+
+```java
+Environment variables loaded from /Users/nikolasburk/Desktop/nextjs-guide/blogr-starter/.env
+```
+
+Prisma schema loaded from prisma/schema.prisma
+
+🚀 Your database is now in sync with your schema. Done in 2.10s
+Output from pushing your Prisma schema to your database.
+Congratulations, the tables have been created! Go ahead and add some initial dummy data using Prisma Studio. Run the following command:
+
+```java
+npx prisma studio
+```
+
+Open Prisma Studio, a GUI for modifying your database.
+
 ## Site Config
 
 config/site-config.js
